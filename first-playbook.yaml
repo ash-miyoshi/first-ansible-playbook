@@ -9,7 +9,7 @@
         update_cache: yes
     
     - name: Copy file with owner and permissions
-      ansible.builtin.apt:
+      ansible.builtin.copy:
         src: index.html
         dest: /var/www/html
         owner: root
